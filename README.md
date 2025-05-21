@@ -1,11 +1,7 @@
-# 🌦️ WeatherEdit: Controllable Weather Editing with 4D Gaussian Field
-
-**Official implementation of our ICCV 2025 submission**  
-[📄 Paper](https://your-paper-link.com) • [🎥 Project Page](https://your-project-page.com) • [📧 Contact](mailto:tscq@leeds.ac.uk)
+## 🌦️ WeatherEdit: Controllable Weather Editing with 4D Gaussian Field
 
 ---
-
-WeatherEdit is a novel framework for generating **realistic, controllable weather effects** in 3D scenes using 4D Gaussian fields and diffusion-based image editing.  
+**Realistic, controllable weather effects** in 3D scenes using 4D Gaussian fields and diffusion-based image editing.  
 It enables:
 
 - 🎨 Flexible control over **weather types** (e.g., rain, fog, snow)
@@ -18,12 +14,10 @@ It enables:
 ## 💡 Quick Start
 
 ### A. General Weather Editing (`General Scene/`)
-
-We support both standalone rendering and modular integration with your own Gaussian scene.
-
+We offer a lightweight version designed for ease of use in general scenes, without requiring local field alignment. It supports both standalone rendering and modular integration with your own Gaussian scene.
 #### 1️⃣ Train a Scene with 3D Gaussian Splatting
 
-Prepare your dataset and train:
+Prepare your dataset and train (Or you may use our pretrained checkpoint).:
 
 ```bash
 python train.py -s path/to/data/
@@ -37,7 +31,6 @@ Render with custom weather using:
 python render.py -m path/to/model --weather snow
 ```
 
-You may use your own trained model or a provided pretrained checkpoint.
 
 ---
 
@@ -79,7 +72,7 @@ scales    = torch.cat((scales, pg['scaling']), dim=0)
 rotations = torch.cat((rotations, pg['rotation']), dim=0)
 ```
 
-#### 🧩 Step 4. Render and Update Weather
+#### 🧩 Step 4. Render and Update Weather Particles
 
 ```python
 rendering = render(interp_cam, gaussians, pipeline, background, pg=particle_gaussians)["render"]
