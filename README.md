@@ -1,1 +1,124 @@
-# test_weather2
+# 🌦️ WeatherEdit: Controllable Weather Editing with 4D Gaussian Field
+
+**Official implementation of our ICCV 2025 submission**  
+[📄 Paper](https://your-paper-link.com) • [🎥 Project Page](https://your-project-page.com) • [📧 Contact](mailto:tscq@leeds.ac.uk)
+
+---
+
+WeatherEdit is a novel framework for generating **realistic, controllable weather effects** in 3D scenes using 4D Gaussian fields and diffusion-based image editing.  
+It enables:
+
+- 🎨 Flexible control over **weather types** (e.g., rain, fog, snow)
+- 🌡️ Precise **weather severity** adjustment (light, moderate, heavy)
+- 🌀 **Dynamic weather simulation** with physically-inspired particle modeling
+- 🖼️ **Multi-view and multi-frame consistency** for driving and general scenes
+
+---
+
+## 💡 Quick Start
+
+### A. General Weather Editing (`General Scene/`)
+
+We support both standalone rendering and modular integration with your own Gaussian scene.
+
+#### 1️⃣ Train a Scene with 3D Gaussian Splatting
+
+Prepare your dataset and train:
+
+```bash
+python train.py -s path/to/data/
+```
+
+#### 2️⃣ Render with Weather Effects
+
+Render with custom weather using:
+
+```bash
+python render.py -m path/to/model --weather snow
+```
+
+You may use your own trained model or a provided pretrained checkpoint.
+
+---
+
+### 🔌 Plug-and-Play Weather Module (in your code)
+
+You can inject weather effects into any Gaussian rendering pipeline.
+
+#### 🧩 Step 1. Set Weather Configuration
+
+Edit `weather_config.json` to define type, density, velocity, and size of particles:
+
+```json
+{
+  "weather_type": "snow",
+  "density": 1500,
+  "velocity": [0.0, -0.4, 0.0],
+  "scale": 0.04
+}
+```
+
+#### 🧩 Step 2. Load Particle Gaussians
+
+In your render script:
+
+```python
+from utils.weather_utils import load_particle_config
+
+particle = load_particle_config(gaussians, weather_type="snow")
+particle_gaussians = particle.get_static_gaussians()
+```
+
+#### 🧩 Step 3. Merge Weather with Scene Gaussians
+
+```python
+means3D   = torch.cat((means3D, pg['positions']), dim=0)
+means2D   = torch.cat((means2D, torch.zeros_like(pg['positions'])), dim=0)
+opacity   = torch.cat((opacity, pg['opacity']), dim=0)
+scales    = torch.cat((scales, pg['scaling']), dim=0)
+rotations = torch.cat((rotations, pg['rotation']), dim=0)
+```
+
+#### 🧩 Step 4. Render and Update Weather
+
+```python
+rendering = render(interp_cam, gaussians, pipeline, background, pg=particle_gaussians)["render"]
+if particle:
+    particle.update_positions(delta_time)
+```
+
+This allows for **dynamic simulation** of weather effects that evolve over time and viewpoint.
+
+---
+
+### B. Driving Scene Editing (`Driving Scene/`) 🚘
+
+Coming soon: support for multi-camera, multi-frame driving sequences with temporal-view consistency and motion-aware particle alignment.
+
+---
+
+## 📌 Citation
+
+If you use WeatherEdit in your work, please cite:
+
+```bibtex
+@article{qian2025weatheredit,
+  title={WeatherEdit: Controllable Weather Editing with 4D Gaussian Field},
+  author={Qian, Chenghao and Guo, Yuhu and Li, Wenjing and Markkula, Gustav},
+  journal={ICCV},
+  year={2025}
+}
+```
+
+---
+
+## 📬 Contact
+
+For questions, suggestions, or collaborations:
+
+- 📧 tscq@leeds.ac.uk
+- 🌐 [Project Page](https://your-project-page-link.com)
+
+---
+
+Thanks for your interest in WeatherEdit! We hope it helps bring new life to your 3D scenes 🌧️🌨️🌫️
