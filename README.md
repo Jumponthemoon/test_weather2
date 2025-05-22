@@ -1,12 +1,17 @@
 ## 🌦️ WeatherEdit: Controllable Weather Editing with 4D Gaussian Field
+**Realistic, Controllable and Scalable** weather editing in 4D scenes.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/e5b74e41-d25f-4a25-af42-99a95bcdb04e" width="800"/>
+</div>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b2b46e74-010d-4d80-a153-e4561668cc0f" width="800"/>
+</div>
 
 ---
-**Realistic, controllable weather effects** in 3D scenes using 4D Gaussian fields and diffusion-based image editing.  
-It enables:
 
 - 🎨 Flexible control over **weather types** (e.g., rain, fog, snow)
 - 🌡️ Precise **weather severity** adjustment (light, moderate, heavy)
-- 🌀 **Dynamic weather simulation** with physically-inspired particle modeling
 - 🖼️ **Multi-view and multi-frame consistency** for driving and general scenes
 
 ---
@@ -40,14 +45,16 @@ You can inject weather effects into any Gaussian rendering pipeline.
 
 #### 🧩 Step 1. Set Weather Configuration
 
-Edit `weather_config.json` to define type, density, velocity, and size of particles:
+Edit `weather_config.json` to define attributes of particles:
 
-```json
+```python
 {
   "weather_type": "snow",
   "density": 1500,
   "velocity": [0.0, -0.4, 0.0],
-  "scale": 0.04
+  "scale": 0.04,
+  ...
+  ...
 }
 ```
 
@@ -58,11 +65,11 @@ In your render script:
 ```python
 from utils.weather_utils import load_particle_config
 
-particle = load_particle_config(gaussians, weather_type="snow")
+particle = load_particle_config(gaussians, weather_type=weather_type,config_path="weather_config.json")
 particle_gaussians = particle.get_static_gaussians()
 ```
 
-#### 🧩 Step 3. Merge Weather with Scene Gaussians
+#### 🧩 Step 3. Merge Weather with Scene Gaussians (`gaussian_renderer/__init__.py`) 
 
 ```python
 means3D   = torch.cat((means3D, pg['positions']), dim=0)
