@@ -51,7 +51,7 @@
 
 ### A. General Weather Editing (`General Scene/`)
 We offer a lightweight version designed for ease of use in general scenes, without requiring local field alignment. It supports both standalone rendering and modular integration with your own Gaussian scene.
-#### 1️⃣ Train a Scene with 3D Gaussian Splatting
+#### 🧩 Step 1. Train a Scene with 3D Gaussian Splatting
 
 Prepare your dataset and train (Or you may use our pretrained checkpoint).:
 
@@ -59,7 +59,7 @@ Prepare your dataset and train (Or you may use our pretrained checkpoint).:
 python train.py -s path/to/data/
 ```
 
-#### 2️⃣ Render with Weather Effects
+#### 🧩 Step 2. Render with Weather Effects
 
 Render with custom weather using:
 
@@ -70,7 +70,7 @@ python render.py -m path/to/model --weather snow
 
 ---
 
-### 🔌 Plug-and-Play Weather Module (in your code)
+### 🔌 Plug-and-Play Weather Module (in your 3DGS code)
 
 You can inject weather effects into any Gaussian rendering pipeline.
 
@@ -124,7 +124,7 @@ This allows for **dynamic simulation** of weather effects that evolve over time 
 
 ### B. Driving Scene Editing (`Driving Scene/`) 🚘
 
-Coming soon: support for multi-camera, multi-frame driving sequences with temporal-view consistency and motion-aware particle alignment.
+Stay Tuned.
 
 ---
 
