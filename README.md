@@ -21,7 +21,7 @@
   <a href="https://arxiv.org/abs/1234.56789">
     <img src="https://img.shields.io/badge/arXiv-article-red" alt="arXiv">
   </a>
-  <a href="https://example.com">
+  <a href="https://jumponthemoon.github.io/WeatherEdit_Page">
     <img src="https://img.shields.io/badge/Project-link-blue" alt="Project">
   </a>
 </p>
