@@ -50,8 +50,11 @@
 ## 💡 Quick Start
 
 ### A. General Weather Editing (`General Scene/`)
-We offer a lightweight version designed for ease of use in general scenes, without requiring local field alignment. It supports both standalone rendering and modular integration with your own Gaussian scene.
-#### 🧩 Step 1. Train a Scene with 3D Gaussian Splatting
+A lightweight version for easy integration into general scenes, without requiring local field alignment.
+We provide step-by-step instructions for rendering weather particles from scratch, as well as guidance for modular integration into your own pipeline.
+
+#### 🔶 (a) Rendering Weather Particle from Scratch  
+#### Step 1. Train a Scene with 3D Gaussian Splatting
 
 Prepare your dataset and train (Or you may use our pretrained checkpoint).:
 
@@ -59,7 +62,7 @@ Prepare your dataset and train (Or you may use our pretrained checkpoint).:
 python train.py -s path/to/data/
 ```
 
-#### 🧩 Step 2. Render with Weather Effects
+#### Step 2. Render with Weather Particle
 
 Render with custom weather using:
 
@@ -68,13 +71,11 @@ python render.py -m path/to/model --weather snow
 ```
 
 
----
-
-### 🔌 Plug-and-Play Weather Module (in your 3DGS code)
+#### 🔶 (b) Plug-and-Play Weather Particle Module (in your 3DGS code)
 
 You can inject weather effects into any Gaussian rendering pipeline.
 
-#### 🧩 Step 1. Set Weather Configuration
+#### Step 1. Set Weather Configuration
 
 Edit `weather_config.json` to define attributes of particles:
 
@@ -89,7 +90,7 @@ Edit `weather_config.json` to define attributes of particles:
 }
 ```
 
-#### 🧩 Step 2. Load Particle Gaussians
+#### Step 2. Load Particle Gaussians
 
 In your render script:
 
@@ -100,7 +101,7 @@ particle = load_particle_config(gaussians, weather_type=weather_type,config_path
 particle_gaussians = particle.get_static_gaussians()
 ```
 
-#### 🧩 Step 3. Merge Weather with Scene Gaussians (`gaussian_renderer/__init__.py`) 
+#### Step 3. Merge Weather with Scene Gaussians (`gaussian_renderer/__init__.py`) 
 
 ```python
 means3D   = torch.cat((means3D, pg['positions']), dim=0)
@@ -110,7 +111,7 @@ scales    = torch.cat((scales, pg['scaling']), dim=0)
 rotations = torch.cat((rotations, pg['rotation']), dim=0)
 ```
 
-#### 🧩 Step 4. Render and Update Weather Particles
+#### Step 4. Render and Update Weather Particles
 
 ```python
 rendering = render(interp_cam, gaussians, pipeline, background, pg=particle_gaussians)["render"]
