@@ -1,4 +1,6 @@
-## 🌦️ WeatherEdit: Controllable Weather Editing with 4D Gaussian Field
+<h2 align="center">
+  🌦️ WeatherEdit: Controllable Weather Editing with 4D Gaussian Field
+</h2>
 <p align="center">
   <em>
     <a href="https://scholar.google.com/citations?user=EFV2q-4AAAAJ&hl=en">Chenghao Qian</a><sup>1</sup>,
