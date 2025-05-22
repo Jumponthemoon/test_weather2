@@ -1,5 +1,26 @@
 ## 🌦️ WeatherEdit: Controllable Weather Editing with 4D Gaussian Field
-**Realistic, Controllable and Scalable** weather editing in 4D scenes.
+<p align="center">
+  <em>
+    <a href="https://scholar.google.com/citations?user=EFV2q-4AAAAJ&hl=en">Chenghao Qian</a>,
+    <a href="https://example.com/li">Wenjing Li</a>,
+    <a href="https://example.com/guo">Yuhu Guo</a>,
+    <a href="https://example.com/markkula">Gustav Markkula</a>
+  </em>
+</p>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/1234.56789">
+    <img src="https://img.shields.io/badge/arXiv-article-red" alt="arXiv">
+  </a>
+
+  <a href="https://example.com">
+    <img src="https://img.shields.io/badge/Project-link-blue" alt="Project">
+  </a>
+</p>
+
+
+
+A **Realistic, Controllable** and **Scalable** weather editing framework.
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e5b74e41-d25f-4a25-af42-99a95bcdb04e" width="800"/>
 </div>
