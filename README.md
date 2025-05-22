@@ -13,6 +13,7 @@
 - 🎨 Flexible control over **weather types** (e.g., rain, fog, snow)
 - 🌡️ Precise **weather severity** adjustment (light, moderate, heavy)
 - 🖼️ **Multi-view and multi-frame consistency** for driving and general scenes
+[![Watch the video](https://img.youtube.com/vi/TAfCyhbZWeM/hqdefault.jpg)](https://youtu.be/TAfCyhbZWeM)
 
 ---
 
