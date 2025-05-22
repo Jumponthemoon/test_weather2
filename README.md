@@ -19,7 +19,6 @@
   <a href="https://arxiv.org/abs/1234.56789">
     <img src="https://img.shields.io/badge/arXiv-article-red" alt="arXiv">
   </a>
-  &nbsp;&nbsp;
   <a href="https://example.com">
     <img src="https://img.shields.io/badge/Project-link-blue" alt="Project">
   </a>
@@ -28,8 +27,9 @@
 
 
 
-A **Realistic, Controllable** and **Scalable** weather editing framework.
-<div align="center">
+<p align="center">
+  A <strong>Realistic, Controllable</strong> and <strong>Scalable</strong> Framework for Weather Editing.
+</p><div align="center">
   <img src="https://github.com/user-attachments/assets/e5b74e41-d25f-4a25-af42-99a95bcdb04e" width="800"/>
 </div>
 
@@ -42,7 +42,6 @@ A **Realistic, Controllable** and **Scalable** weather editing framework.
 - 🎨 Flexible control over **weather types** (e.g., rain, fog, snow)
 - 🌡️ Precise **weather severity** adjustment (light, moderate, heavy)
 - 🖼️ **Multi-view and multi-frame consistency** for driving and general scenes
-- Demo_link: https://youtu.be/TAfCyhbZWeM
 
 ---
 
