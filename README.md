@@ -30,7 +30,7 @@
 
 
 <p align="center">
-  A <strong>Realistic, Controllable</strong> and <strong>Scalable</strong> Framework for Weather Editing.
+  A <strong>Realistic, Controllable</strong> and <strong>Scalable</strong> Framework for <strong>Weather Editing</strong>
 </p><div align="center">
   <img src="https://github.com/user-attachments/assets/e5b74e41-d25f-4a25-af42-99a95bcdb04e" width="800"/>
 </div>
@@ -41,9 +41,9 @@
 
 ---
 
-- 🎨 Flexible control over **weather types** (e.g., rain, fog, snow)
+- 🎨 Flexible control over **weather types** (snow, fog, rain)
 - 🌡️ Precise **weather severity** adjustment (light, moderate, heavy)
-- 🖼️ **Multi-view and multi-frame consistency** for driving and general scenes
+- 🖼️ **Global consistency** for multi-view driving scenes (temporal, spatial)
 
 ---
 
