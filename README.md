@@ -10,13 +10,6 @@
   </em>
 </p>
 
-<p align="center">
-  <sup>1</sup>University of Leeds &nbsp;&nbsp;
-  <sup>2</sup>Carnegie Mellon University<br>
-
-</p>
-
-
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4483e88e-4552-4245-9c29-2c84abf78788" alt="image" width="390">
