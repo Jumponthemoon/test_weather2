@@ -12,9 +12,8 @@
 
 <p align="center">
   <sup>1</sup>University of Leeds &nbsp;&nbsp;
-  <sup>2</sup>Some Other Institution <br>
-  <sup>*</sup>Equal contribution &nbsp;&nbsp;
-  <sup>†</sup>Corresponding author
+  <sup>2</sup>Carnegie Mellon University<br>
+
 </p>
 
 
