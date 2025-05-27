@@ -4,8 +4,8 @@
 <p align="center">
   <em>
     <a href="https://scholar.google.com/citations?user=EFV2q-4AAAAJ&hl=en">Chenghao Qian</a><sup>1,*</sup>,
-    <a href="https://scholar.google.com/citations?user=uBjSytAAAAAJ&hl=en">Wenjing Li</a><sup>1,†</sup>,
     <a href="https://example.com/guo">Yuhu Guo</a><sup>2</sup>,
+    <a href="https://scholar.google.com/citations?user=uBjSytAAAAAJ&hl=en">Wenjing Li</a><sup>1,†</sup>,
     <a href="https://scholar.google.com/citations?user=55G7VxoAAAAJ&hl=en">Gustav Markkula</a><sup>1</sup>
   </em>
 </p>
