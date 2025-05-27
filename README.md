@@ -3,12 +3,20 @@
 </h2>
 <p align="center">
   <em>
-    <a href="https://scholar.google.com/citations?user=EFV2q-4AAAAJ&hl=en">Chenghao Qian</a><sup>1</sup>,
-    <a href="https://scholar.google.com/citations?user=uBjSytAAAAAJ&hl=en">Wenjing Li</a><sup>1</sup>,
+    <a href="https://scholar.google.com/citations?user=EFV2q-4AAAAJ&hl=en">Chenghao Qian</a><sup>1,*</sup>,
+    <a href="https://scholar.google.com/citations?user=uBjSytAAAAAJ&hl=en">Wenjing Li</a><sup>1,†</sup>,
     <a href="https://example.com/guo">Yuhu Guo</a><sup>2</sup>,
     <a href="https://scholar.google.com/citations?user=55G7VxoAAAAJ&hl=en">Gustav Markkula</a><sup>1</sup>
   </em>
 </p>
+
+<p align="center">
+  <sup>1</sup>University of Leeds &nbsp;&nbsp;
+  <sup>2</sup>Some Other Institution <br>
+  <sup>*</sup>Equal contribution &nbsp;&nbsp;
+  <sup>†</sup>Corresponding author
+</p>
+
 
 
 <p align="center">
