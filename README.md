@@ -37,7 +37,7 @@
 
 
 <p align="center">
-  A <strong>Controllable</strong> and <strong>Scalable</strong> Framework for <strong>Realistic Weather Editing.</strong>
+  A <strong>Controllable</strong>, <strong>Scalable</strong> and <strong>Efficient</strong> Framework for <strong>Realistic Weather Editing.</strong>
 </p><div align="center">
   <img src="https://github.com/user-attachments/assets/e5b74e41-d25f-4a25-af42-99a95bcdb04e" width="800"/>
 </div>
