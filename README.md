@@ -56,15 +56,14 @@ Coming Soon...
 ## 📌 Citation
 
 ```bibtex
-      @article{qian2025wedit,
+@article{qian2025wedit,
       title={WeatherEdit: Controllable Weather Editing with 4D Gaussian Field}, 
       author={Chenghao Qian and Wenjing Li and Yuhu Guo and Gustav Markkula},
       year={2025},
       eprint={2505.20471},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2505.20471}, 
-}  
+      url={https://arxiv.org/abs/2505.20471},}  
 ```
 
 ---
