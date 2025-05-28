@@ -18,7 +18,7 @@
 
 
 <p align="center">
-  <a href="https://arxiv.org/abs/1234.56789">
+  <a href="https://arxiv.org/abs/2505.20471">
     <img src="https://img.shields.io/badge/arXiv-article-red" alt="arXiv">
   </a>
   <a href="https://jumponthemoon.github.io/w-edit">
