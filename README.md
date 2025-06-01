@@ -33,13 +33,16 @@
 
 <p align="center">
   A <strong>Controllable</strong>, <strong>Scalable</strong> and <strong>Efficient</strong> Framework for <strong>Realistic Weather Editing.</strong>
-</p><div align="center">
-  <img src="https://github.com/user-attachments/assets/e5b74e41-d25f-4a25-af42-99a95bcdb04e" width="800"/>
-</div>
-
+</p>
 <div align="center">
   <img src="https://github.com/user-attachments/assets/b2b46e74-010d-4d80-a153-e4561668cc0f" width="800"/>
 </div>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/e5b74e41-d25f-4a25-af42-99a95bcdb04e" width="800"/>
+</div>
+
+
 
 ---
 
